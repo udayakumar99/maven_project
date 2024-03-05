@@ -24,5 +24,15 @@ pipeline
         sh "mvn install"
       }
     }
+    stage("shellgit1")
+    {
+      steps
+      {
+        git branch: 'patch-1', url: 'https://github.com/udayakumar99/maven_project.git'
+        sh "bash sample.sh"
+      }
+    }
+    
+        
   }
 }
