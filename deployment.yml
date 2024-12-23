@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: demo-app
-        image: udayakumar99/project1:8
+        image: tomcat
         ports:
         - containerPort: 8081
 ---
